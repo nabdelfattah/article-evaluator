@@ -11,11 +11,49 @@
     <link rel="icon" href="../assets/favicon.ico" />
     <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png" />
     <link rel="manifest" href="../assets/site.webmanifest" />
-    <title>NLP evaluator</title>
+    <title>Article Evaluator</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+    <header class="header">
+      <div class="logo-wrapper container">
+        <img class="logo-img" src="../assets/logo.svg" alt="a robot's head" />
+        <p class="logo-text">Article Evaluator</p>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-form container">
+        <h1 class="heading-primary">Analyze Your Articles Instantly</h1>
+        <form class="form" method="post">
+          <label for="url" class="label">
+            Enter the news article's URL, please!
+          </label>
+          <input id="url" class="input" name="url" type="url" />
+          <button type="submit" class="btn-cta">Submit</button>
+        </form>
+      </section>
+
+      <section class="section-data container">
+        <h2 class="heading-secondary">Results:</h2>
+        <ul class="data-list">
+          <li class="data-point">polarity: <span id="polarity"></span></li>
+          <li class="data-point">
+            subjectivity: <span id="subjectivity"></span>
+          </li>
+          <li class="data-point">
+            A snippet from the article: <span id="snippet"></span>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          Copyright &copy;<span class="year">2024</span>. All Rights Preserved
+        </p>
+        <p class="source">
+          Information is sourced from <a href="https://aylien.com/">Aylien</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
