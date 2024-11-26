@@ -1,0 +1,21 @@
+@use "./general" as *;
+
+.footer {
+  background-color: $color-blue-light;
+  padding: 1rem 0 2rem;
+  box-shadow: 0 0.6rem 2.2rem 2.2rem $color-blue-light;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.copyright {
+  margin-bottom: 1.6rem;
+}
+
+.source {
+  //
+}
+
+.source-link {
+  //
+}

@@ -1,0 +1,27 @@
+@use "./general" as *;
+
+.header {
+  background-color: $color-blue-light;
+  padding: 2rem 0 0rem;
+  box-shadow: 0 0.6rem 2.2rem 2.2rem $color-blue-light;
+  margin-bottom: 4rem;
+}
+
+.logo-wrapper {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+}
+
+.logo-img {
+  // background-color: $color-white;
+  height: 4rem;
+  width: 4rem;
+  // padding: 0.2rem;
+  // border-radius: 50%;
+}
+
+.logo-text {
+  @include text($fs: 2rem, $fw: 500);
+  margin-bottom: 0.6rem;
+}
