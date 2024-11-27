@@ -1,0 +1,33 @@
+@use "./general" as *;
+
+.main {
+  padding-top: 8rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 70vh;
+}
+
+.section-data {
+  align-self: center;
+  transition: all 0.6s;
+}
+
+.data-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  li {
+    @include text($fs: 1.8rem, $fw: 600, $lineHeight: 1.5);
+    letter-spacing: 0.8px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+#polarity,
+#subjectivity,
+#snippet {
+  @include text($fw: 400, $lineHeight: 1.5);
+  color: $color-blue-dark;
+}

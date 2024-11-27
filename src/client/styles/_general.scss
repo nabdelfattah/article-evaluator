@@ -1,18 +1,20 @@
 // variables
+$font-family-default: "Roboto";
+$font-family-mono: "Roboto Mono";
 $color-primary: #1f7a8c;
 $color-blue-light: #d2e6f9;
 $color-blue-dark: #053c5e;
-$color-orange: #d58936;
-// $color-orange: #E7EB90;
-// $color-orange: #EE4266;
-// $color-blue-light: #bfdbf7;
-// $color-orange: #db222a;
-// $color-red: #a31621;
+$color-orange: #db222a;
 $color-white: #fff;
 $color-black: #444;
-$radius-default: 9px;
+$color-gray: #696969;
+
+$radius-default: 7px;
+$radius-sm: 3px;
+
 $box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.1);
 $box-shadow-focus: 0 0 0 0.3rem $color-primary;
+
 $timing-animation: 0.3s;
 
 ////////////////////////////////////////
@@ -37,7 +39,7 @@ html {
 }
 
 body {
-  font-family: "Rubik", sans-serif;
+  font-family: $font-family-default;
   color: $color-black;
   font-size: 1.6rem;
   font-weight: 400;
@@ -85,4 +87,32 @@ button {
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
+}
+
+.heading-primary {
+  @include text($fs: 4.4rem, $fw: 600, $lineHeight: 1.1, $mb: 6rem);
+  font-family: $font-family-default;
+  color: $color-primary;
+  white-space: nowrap;
+  position: relative;
+}
+
+.heading-secondary {
+  @include text($fs: 3rem, $fw: 500, $lineHeight: 1.1, $mb: 2.4rem);
+  color: $color-blue-dark;
+}
+
+.icon {
+  height: 4rem;
+  width: 4rem;
+}
+
+.invalid {
+  border: 1px solid $color-orange !important;
+}
+
+.disable {
+  background-color: $color-gray !important;
+  color: $color-white !important;
+  cursor: not-allowed;
 }

@@ -2,26 +2,29 @@
 
 .header {
   background-color: $color-blue-light;
-  box-shadow: 0 0rem 1rem 1rem $color-blue-light;
-  margin-bottom: 1rem;
-  height: calc(15vh - 1rem);
+  height: 15vh;
   display: flex;
   align-items: center;
 }
 
 .logo-wrapper {
   display: flex;
-  gap: 0.5rem;
-  align-items: flex-end;
+  gap: 0.8rem;
+  align-items: center;
+  user-select: none;
 }
 
 .logo-img {
-  height: 4rem;
-  width: 4rem;
+  height: 5rem;
+  width: 5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background-color: $color-white;
 }
 
 .logo-text {
+  font-family: $font-family-mono;
   color: $color-blue-dark;
-  @include text($fs: 2rem, $fw: 500);
-  margin-bottom: 0.6rem;
+  @include text($fs: 2rem, $fw: 700);
+  // margin-bottom: 0.6rem;
 }

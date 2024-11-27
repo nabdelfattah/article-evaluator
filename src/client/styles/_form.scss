@@ -1,0 +1,39 @@
+@use "./general" as *;
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 80%;
+}
+
+.label {
+  @include text($fs: 1.8rem, $fw: 600, $lineHeight: 1.5);
+  letter-spacing: 0.8px;
+}
+
+.input {
+  height: 3.6rem;
+  padding: 0 1.6rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $color-blue-dark;
+  margin-bottom: 1.6rem;
+  transition: all $timing-animation;
+  &:focus {
+    border-radius: $radius-sm;
+    border: 1px solid $color-primary;
+  }
+}
+
+.btn-cta {
+  @include text($fs: 2rem, $fw: 500);
+  letter-spacing: 0.3px;
+  padding: 1.6rem 3.2rem;
+  color: $color-white;
+  background-color: $color-orange;
+  border-radius: $radius-default;
+  transition: all $timing-animation;
+  &:hover {
+    background-color: $color-primary;
+  }
+}

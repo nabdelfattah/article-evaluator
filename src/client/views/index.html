@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <title>Article Evaluator</title>
@@ -26,31 +26,44 @@
         <p class="logo-text">Article Evaluator</p>
       </div>
     </header>
-    <main class="main">
-      <section class="section-form container">
+
+    <main class="main container">
+      <section class="section-form">
         <h1 class="heading-primary">Analyze Your Articles Instantly</h1>
         <form class="form" method="post">
           <label for="url" class="label">
             Enter the news article's URL, please!
           </label>
-          <input id="url" class="input" name="url" type="url" />
+          <input id="url" class="input" name="url" type="url" autofocus />
           <button type="submit" class="btn-cta">Submit</button>
         </form>
       </section>
 
-      <section class="section-data container">
+      <section class="section-data">
         <h2 class="heading-secondary">Results:</h2>
         <ul class="data-list">
-          <li class="data-point">polarity: <span id="polarity"></span></li>
-          <li class="data-point">
-            subjectivity: <span id="subjectivity"></span>
+          <li>
+            <img
+              class="icon"
+              src="../assets/polarity.svg"
+              alt="a like-dislike icon"
+            />polarity: <span id="polarity"></span>
           </li>
-          <li class="data-point">
-            A snippet from the article: <span id="snippet"></span>
+          <li>
+            <img
+              class="icon"
+              src="../assets/subjectivity.svg"
+              alt="a question icon"
+            />subjectivity: <span id="subjectivity"></span>
+          </li>
+          <li>
+            <img class="icon" src="../assets/snippet.svg" alt="a crop icon" />A
+            snippet from the article: <span id="snippet"></span>
           </li>
         </ul>
       </section>
     </main>
+
     <footer class="footer">
       <div class="container">
         <p class="copyright">
