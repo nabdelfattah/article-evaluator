@@ -1,21 +1,18 @@
 @use "./general" as *;
 
 .footer {
+  display: flex;
+  align-items: center;
   background-color: $color-blue-light;
-  padding: 1rem 0 2rem;
-  box-shadow: 0 0.6rem 2.2rem 2.2rem $color-blue-light;
-  margin-top: 4rem;
-  text-align: center;
+  box-shadow: 0 0rem 1rem 1rem $color-blue-light;
+  margin-top: 1rem;
+  height: calc(15vh - 1rem);
+  .container {
+    text-align: center;
+    color: $color-blue-dark;
+  }
 }
 
 .copyright {
   margin-bottom: 1.6rem;
-}
-
-.source {
-  //
-}
-
-.source-link {
-  //
 }

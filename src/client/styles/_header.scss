@@ -2,9 +2,11 @@
 
 .header {
   background-color: $color-blue-light;
-  padding: 2rem 0 0rem;
-  box-shadow: 0 0.6rem 2.2rem 2.2rem $color-blue-light;
-  margin-bottom: 4rem;
+  box-shadow: 0 0rem 1rem 1rem $color-blue-light;
+  margin-bottom: 1rem;
+  height: calc(15vh - 1rem);
+  display: flex;
+  align-items: center;
 }
 
 .logo-wrapper {
@@ -14,14 +16,12 @@
 }
 
 .logo-img {
-  // background-color: $color-white;
   height: 4rem;
   width: 4rem;
-  // padding: 0.2rem;
-  // border-radius: 50%;
 }
 
 .logo-text {
+  color: $color-blue-dark;
   @include text($fs: 2rem, $fw: 500);
   margin-bottom: 0.6rem;
 }

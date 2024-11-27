@@ -1,9 +1,13 @@
 // variables
 $color-primary: #1f7a8c;
-$color-blue-light: #bfdbf7;
+$color-blue-light: #d2e6f9;
 $color-blue-dark: #053c5e;
-$color-orange: #db222a;
-$color-red: #a31621;
+$color-orange: #d58936;
+// $color-orange: #E7EB90;
+// $color-orange: #EE4266;
+// $color-blue-light: #bfdbf7;
+// $color-orange: #db222a;
+// $color-red: #a31621;
 $color-white: #fff;
 $color-black: #444;
 $radius-default: 9px;
@@ -77,6 +81,7 @@ button {
 ////////////////////////////////////////
 // Reusable classes
 .container {
+  width: 100%;
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
