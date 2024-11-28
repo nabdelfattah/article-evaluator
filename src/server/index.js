@@ -9,6 +9,8 @@ app.use(cors({origin: 'http://localhost:8080'}))
 
 app.use(express.static('dist'));
 
+require('dotenv').config();
+
 app.get('/', (req, res) => {
   res.sendFile('dist/index.html');
 });
