@@ -1,0 +1,52 @@
+/* BELOW 1200px (Landscape Tablets) */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* BELOW 944px (Tablets) */
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .container {
+    padding: 0 4rem;
+  }
+  .header {
+    height: 10rem;
+  }
+  .main {
+    flex: 1;
+    min-height: 0;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .footer {
+    height: auto;
+    padding: 4rem 0;
+  }
+  .logo-text {
+    font-size: 1.8rem;
+  }
+  .heading-primary {
+    font-size: 3.6rem;
+    margin-bottom: 5rem;
+    color: #1f7a8c;
+    white-space: initial;
+    translate: 0 0;
+    text-align: center;
+  }
+  .heading-secondary {
+    font-size: 2.6rem;
+  }
+  .form {
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
