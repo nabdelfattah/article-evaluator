@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // optimize-css-assets-webpack-plugin is depricated
 const CssMinimizerWebpackPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 
 
 module.exports = {
@@ -50,6 +51,7 @@ module.exports = {
         filename: 'index.html',
       },
     ),
-    new MiniCssExtractPlugin({ filename: '[name].css' })
+    new MiniCssExtractPlugin({ filename: '[name].css' }),
+    new WorkboxPlugin.GenerateSW()
   ],
 };
