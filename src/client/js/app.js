@@ -8,20 +8,20 @@ export function initialize() {
 }
  
 export function analyzeArticle(url) {
-  // TODO
-  // fetch data from API
-  // Return dara
+  return fetch(`http://localhost:8081/analyze?url=${url}`)
+  .then(response => response.json())
+  .catch(err => Client.alertUser(err))
+}
+
+export function updateUI (dataObj){
+  polarityEl.innerText = dataObj.polarity
+  subjectivityEl.innerText = dataObj.subjectivity
+  snippetEl.innerText = dataObj.snippet
   return
 }
 
-function updateUI (){
-  // TODO 
-  // Enter the fetched data in polarityEl, subjectivityEl, snippetEl
-  return
-}
-
-export function alertUser() {
-  alert('Please, enter a vaild URL.')
+export function alertUser(msg) {
+  alert(msg)
 }
 
 initialize()
