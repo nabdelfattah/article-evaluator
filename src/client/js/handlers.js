@@ -18,7 +18,7 @@ export function submitHandler(e){
   }
 }
 
-function getPolarity(symbol) {
+export function getPolarity(symbol) {
   const polarityObj = {
     'P+': 'strong positive',
     P: 'positive',
